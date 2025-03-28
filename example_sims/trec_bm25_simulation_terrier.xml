@@ -1,0 +1,41 @@
+<!--
+Simulation Configuration DTD
+
+Authors: Leif Azzopardi & David Maxwell
+Date:   2015-09-09
+-->
+
+<simulationConfiguration id="example_terrier_bm25_sim">
+	
+	<output baseDirectory="../example_sims/output/"
+			saveInteractionLog="true"
+			saveRelevanceJudgments="true"
+			trec_eval="false" />
+	
+	<topics>
+        <!--
+        These are the topics that each simulated user will complete
+        -->
+	    <topic id="367" filename="../example_data/topics/topic.367" qrelsFilename="../example_data/qrels/trec2005.qrels" />
+	    <topic id="347" filename="../example_data/topics/topic.347" qrelsFilename="../example_data/qrels/trec2005.qrels" backgroundFilename="../example_data/word2vec/ap_cbow/t347-100.csv" />
+	    <topic id="435" filename="../example_data/topics/topic.435" qrelsFilename="../example_data/qrels/trec2005.qrels" backgroundFilename="../example_data/word2vec/ap_cbow/t435-100.csv" />
+ 	</topics>
+	
+	<users>
+
+        <user configurationFile="../example_sims/users/trec_user.xml" />
+        <user configurationFile="../example_sims/users/perfect_trec_user.xml" />
+	</users>
+	
+	<searchInterface class="PyTerrierSearchInterface">
+        <!--
+        This is the search interface that the simulated users will interact with
+        -->
+		<attribute name="index_or_dir" type="string" value="../example_data/aquaint.terrier" is_argument="true" />
+		<attribute name="text_field" type="string" value="text" is_argument="true" />
+        <attribute name="wmodel" type="string" value="BM25" is_argument="true" />
+        <attribute name="memory" type="boolean" value="true" is_argument="true" />
+	</searchInterface>
+	
+</simulationConfiguration>
+

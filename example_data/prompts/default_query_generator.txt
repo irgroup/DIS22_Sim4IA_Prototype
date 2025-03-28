@@ -1,0 +1,7 @@
+You are a journalist assessing the relevance of news articles for the following topic and need to generate search queries to find as much relevant material as quickly as possible.
+
+Queries should be as diverse as possible and avoid repetition and no more than 3 query terms.
+Topic Title: "{topic_title}"
+Topic Description: "{topic_description}"
+
+{format_instructions}

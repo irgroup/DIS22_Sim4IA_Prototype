@@ -1,0 +1,1 @@
+from simiir.utils.enum import Enum

@@ -1,0 +1,18 @@
+You are a journalist assessing the relevance of news articles for the following topic:
+```
+Topic Title: "{topic_title}"
+Topic Description: "{topic_description}"
+```
+
+You are trying to determine if you should spend time viewing the current search engine result page with the following snippets.
+```
+{new_snippets}
+```
+
+You have previously found the following snippets, in ```, to be relevant:
+Previous snippets:
+```
+{old_relevant_snippets}
+```
+
+You should be strict in your interpretation of the the topic description.

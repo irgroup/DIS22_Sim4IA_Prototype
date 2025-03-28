@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  sim4ia_dis22:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace:cached
+    container_name: SIM4IA_DIS22_container
+
+          
+    
+

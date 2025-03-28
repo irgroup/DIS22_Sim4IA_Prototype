@@ -1,0 +1,36 @@
+<!--
+Conversational User Configuration DTD
+
+Author: David Maxwell
+Date:   2024-04-20
+-->
+
+<!ELEMENT attribute          (#PCDATA)>
+<!ATTLIST attribute
+          name CDATA #REQUIRED
+          type CDATA #REQUIRED
+          value CDATA #REQUIRED
+          is_argument CDATA #REQUIRED>
+
+<!ELEMENT userConfiguration  (utteranceGenerator, csrpImpression, responseClassifier, responseDecisionMaker, userContext, logger)>
+<!ATTLIST userConfiguration
+          id CDATA #REQUIRED
+          type CDATA #REQUIRED>
+
+<!ELEMENT utteranceGenerator     (attribute*)>
+<!ATTLIST utteranceGenerator     class CDATA #REQUIRED>
+
+<!ELEMENT csrpImpression     (attribute*)>
+<!ATTLIST csrpImpression     class CDATA #REQUIRED>
+
+<!ELEMENT responseClassifier     (attribute*)>
+<!ATTLIST responseClassifier     class CDATA #REQUIRED>
+
+<!ELEMENT responseDecisionMaker     (attribute*)>
+<!ATTLIST responseDecisionMaker     class CDATA #REQUIRED>
+
+<!ELEMENT userContext      (attribute*)>
+<!ATTLIST userContext      class CDATA #REQUIRED>
+
+<!ELEMENT logger             (attribute*)>
+<!ATTLIST logger             class CDATA #REQUIRED>

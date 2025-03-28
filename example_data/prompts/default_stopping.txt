@@ -1,0 +1,10 @@
+You are a journalist assessing a news search result page, where you are looking for results that might be relevant to the following topic:
+Topic Title: "{topic_title}"
+Topic Description: "{topic_description}"
+
+
+Use the following snippets that you've previously viewed:
+{viewed_snippets}
+
+You are going to determine if you should examine the next snippet, presented below, or issue a new query.
+{current_snippet}
