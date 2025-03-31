@@ -9,7 +9,8 @@ This prototype is build upon the implementation of the ![SimIIR3 Framework](http
 ```shell
 curl -L -o index_CORE.zip "https://th-koeln.sciebo.de/s/F9AEa1CXyk2RTpf/download"
 unzip index_CORE.zip -d ./example_data/
-``
+```
+
 3. Build the container by executing:
 ```shell
 
