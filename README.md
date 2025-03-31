@@ -14,7 +14,6 @@ unzip index_CORE.zip -d ./example_data/
 ```shell
 
 docker-compose up -d --build
-
 ```
 If the container has already been built, you can start it with:
 ```shell
