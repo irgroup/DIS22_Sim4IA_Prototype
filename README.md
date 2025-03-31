@@ -6,7 +6,7 @@ This prototype is build upon the implementation of the ![SimIIR3 Framework](http
 
 1. Open a terminal and navigate to the repository directory
 2. Download the Index from Sciebo and unzip the index into `example_data/index_CORE.zip` file into the `example_data/index_CORE directory.
-``shell
+```shell
 curl -L -o index_CORE.zip "https://th-koeln.sciebo.de/s/F9AEa1CXyk2RTpf/download"
 unzip index_CORE.zip -d ./example_data/
 ``
