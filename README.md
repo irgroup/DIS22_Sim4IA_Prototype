@@ -5,8 +5,12 @@ This prototype is build upon the implementation of the ![SimIIR3 Framework](http
 ## Installation
 
 1. Open a terminal and navigate to the repository directory
-2. Unzip the `example_data/index_CORE.zip` file into the `example_data/index_CORE directory.
-2. Build the container by executing:
+2. Download the Index from Sciebo and unzip the index into `example_data/index_CORE.zip` file into the `example_data/index_CORE directory.
+``shell
+curl -L -o index_CORE.zip "https://th-koeln.sciebo.de/s/F9AEa1CXyk2RTpf/download"
+unzip index_CORE.zip -d ./example_data/
+``
+3. Build the container by executing:
 ```shell
 
 docker-compose up -d --build
@@ -18,8 +22,8 @@ If the container has already been built, you can start it with:
 docker-compose up -d
 
 ```
-3. All dependencies should be installed automatically
-4. You can access the Docker container via your IDE (e.g., VS Code)
+4. All dependencies should be installed automatically
+5. You can access the Docker container via your IDE (e.g., VS Code)
 
 You can access the Docker container via your IDE (e.g., VS Code).
 ```shell
