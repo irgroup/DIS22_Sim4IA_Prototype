@@ -4,7 +4,7 @@ This prototype is build upon the implementation of the ![SimIIR3 Framework](http
 
 ## Installation
 
-1. Open a terminal and navigate to the repository directory
+1. Open the GitHub Repository in Codespaces
 2. Download the Index from Sciebo and unzip the index into `example_data/index_CORE.zip` file into the `example_data/index_CORE directory.
 ```shell
 curl -L -o index_CORE.zip "https://th-koeln.sciebo.de/s/F9AEa1CXyk2RTpf/download"
@@ -23,9 +23,13 @@ docker-compose up -d
 
 ```
 4. All dependencies should be installed automatically
-5. You can access the Docker container via your IDE (e.g., VS Code)
+5. You can access Docker shell via
+```shell
 
-You can access the Docker container via your IDE (e.g., VS Code).
+docker exec -it SIM4IA_DIS22_container bash
+
+```
+6. At the end of the session you should shutdown the container and delete the project from your Codespaces
 ```shell
 
 docker-compose down
